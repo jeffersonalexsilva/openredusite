@@ -1,0 +1,80 @@
+header.head-page label.lb-ckmenu{display: none}
+header.head-page{position: fixed;top:0;left:0;width: 100%}
+header.head-page .qtranxs_widget{float: right}
+header.head-page div.social-icons,header.head-page section.central .envelope{margin: 0 auto}
+header.head-page .logo{float:left;padding-top:5px}
+header#head-page.hide{box-shadow: 0 0 10px 0px #bbb;-webkit-box-shadow: 0 0 10px 0px #bbb;-o-box-shadow: 0 0 10px 0px #bbb;-moz-box-shadow: 0 0 10px 0px #bbb;}
+header#head-page.hide .logo{width:100px;margin-right: 80px}
+header#head-page.hide .logo img.horizontal{display:none}
+header#head-page.hide .logo img.icon{display:block}
+header.head-page nav.menu-top{float:left;margin-right: 60px}
+/* header.head-page.hide nav.menu-top{font-size: 0.7em} */
+header.head-page.hide nav.menu-top .menu-principal-container ul li a{padding: 25px}
+header.head-page nav.menu-top .menu-principal-container, header.head-page nav.menu-top aside.social{display: inline-block;margin: 0 20px}
+header.head-page nav.menu-top .menu-principal-container ul li{display: inline-block;border-bottom: 2px solid transparent}
+header.head-page nav.menu-top .menu-principal-container ul li:not([class='menu-item-has-children']):hover{border-bottom-color:#dbeff7}
+header.head-page nav.menu-top .menu-principal-container ul li ul.sub-menu{display: none;position: absolute}
+header.head-page nav.menu-top .menu-principal-container ul li ul.sub-menu li{display: block}
+header.head-page nav.menu-top .menu-principal-container ul li.menu-item-has-children:hover ul.sub-menu{display: block}
+
+/* Breadcrumbs and search */
+section.auxiliar .envelope{max-width: 1200px; margin: 0 auto}
+section.auxiliar nav.breadcrumbs{float: left}
+section.auxiliar div.search{float:right}
+
+section#more-about, section#use,section#colabore,section#ajuda{padding: 150px 0 50px;}
+section#more-about div.central h1.title-section{text-align:left}
+/* conheça */
+section#more-about div.central, section#contato div.central,section#content-single article.post .entry-content{}
+section#more-about div.central div.intro-sobre{width: 60%}
+section#conheca section.adamrob_parallax div.adamrob_parallax_postcontent{}
+section#conheca section.adamrob_parallax div.adamrob_parallax_postcontent img{position: absolute}
+section#conheca section.adamrob_parallax div.adamrob_parallax_postcontent img.sistemanuvem{top:20%;left:10%}
+section#conheca section.adamrob_parallax div.adamrob_parallax_postcontent img.recursos{top:20%;right:15%}
+section#conheca section.adamrob_parallax div.adamrob_parallax_postcontent img.mobile{top:15%;left:50%}
+section#conheca section.adamrob_parallax div.adamrob_parallax_postcontent img.midiasocial{top:10%;left:10%}
+section#conheca section.adamrob_parallax div.adamrob_parallax_postcontent img.aprendizado{top:5%;left:35%}
+section#conheca section.adamrob_parallax div.adamrob_parallax_postcontent img.api{top:5%;right:5%}
+/* use */
+section#use div.mostra-usuarios, section#use div.central .bts_cta{width: 600px;margin: 0 auto}
+section#use div.mostra-usuarios div.instancias, section#use div.mostra-usuarios div.usuarios,section#use div.mostra-usuarios div.trabalhos{width: 30%;margin: 0 1.5%}
+section#use div.central .bts_cta a{width: 40%;margin: 10px 3.5%;display:inline-block}
+
+/* colabore */
+section#colabore div.modalidades div.modalidade{float: left;width: 25%}
+section#colabore div.modalidades{padding: 50px 0;text-align: center}
+/* ajuda */
+section#ajuda div.itens .item{float: left;width: 25%}
+
+div.parallax-window-container .adamrob_parallax_posttitle{font-size: 4em}
+
+/* Content blog/archive */
+section#content-area{padding: 140px 0 40px}
+section#content-area header.blog-header{padding: 10px 0}
+section#content-area header.blog-header h1.blog-title{font-size: 2.5em;max-width: 1200px;margin: 0 auto}
+section#content-area #posts-area{max-width: 1200px;margin: 0 auto}
+section#content-area article.first.post header.entry-header .envelope, section#content-single #main article header div.envelope{background-color: rgba(255,255,255,0.9);position: relative;margin-top: -200px; margin-bottom: 50px}
+section#content-area article.first.post header.entry-header .envelope.no-image, section#content-single #main article header div.envelope.no-image{margin-top:inherit;margin-bottom: 10px}
+section#content-area article.first.post header.entry-header .envelope h2.sub-title, section#content-single #main article header div.envelope h1{max-width:1200px;margin: 0 auto;padding: 20px 0}
+section#content-area article.blog.first.post header.entry-header h2.sub-title{width: 1200px; margin: 0 auto}
+section#content-area article.first.post section.entry, section#content-single #main article section.entry{padding: 20px;background-color: rgba(255,255,255,0.9);position: relative;max-width: 1200px; margin: 0 auto}
+section#content-area.colabore #posts-area article.post header.entry-header h2{margin-top:-70px}
+section#content-area.colabore #posts-area article.post header.entry-header h2 a{padding: 0 20px}
+section#content-area.colabore #posts-area article.post .entry-content, section#content-area #posts-area article.post.first .entry{padding: 20px}
+section#content-area article.blog.first.post .meta-area, section#content-area article.blog.first.post .entry-content{width: 1200px; margin: 0 auto}
+section#content-area.blog #posts-area section.posts{width: 700px;margin-right: 30px;float:left}
+section#content-area.blog #posts-area section.sidebars{width: 250px;float: right}
+
+section#content-single{padding: 140px 0}
+section#content-single.blog article.post header.entry-header h1.title,section#content-single.blog article.post header.entry-header .meta-area{width: 1200px;margin:0 auto}
+section#content-single.blog article.post .entry-content ul{padding: 5px 0 5px 40px}
+section#content-single header.single-header{max-width: 1200px;margin:0 auto}
+section#content-single article.post .entry-content .insert-page.apoio p a{width: 15%;margin: 2.5%}
+
+div#content article.post .entry-content img.alignleft{float:left;padding: 5px 10px 10px 0}
+section#content-single article.post .entry-content{margin: 0 auto}
+/* Section search */
+section#search{padding-top: 160px}
+
+footer#contato div.central div.menu-principal-container, footer#contato div.central address.social-icons{float: right;width: 50%}
+footer#contato div.central div.sobre-foot{float: left;width: 30%}

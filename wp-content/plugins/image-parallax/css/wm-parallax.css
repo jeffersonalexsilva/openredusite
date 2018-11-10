@@ -1,0 +1,30 @@
+div.wm-parallax {
+  margin: 1em 0;
+  line-height: 0;
+  text-align: center;
+}
+div.wm-parallax > ul {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.wm-parallax li,
+div.wm-parallax > ul > li.layer {
+  display: block;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+}
+.wm-parallax li:first-child,
+div.wm-parallax > ul > li.layer:first-child {
+  position: relative;
+}
+.wm-parallax img,
+div.wm-parallax > ul > li.layer > img {
+  max-width: 100%;
+  height: auto;
+}

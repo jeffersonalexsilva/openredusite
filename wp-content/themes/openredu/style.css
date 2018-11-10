@@ -1,0 +1,295 @@
+/*
+Theme Name: Openredu - Rede Social Educacional
+Theme URI: http://openredu.org
+Author: Jefferson Alex - PIBID / Design
+Author URI: https://www.jeffersonalex.com.br
+Description: Tema criado para o site da Openredu 
+Version: 1.0
+License: Public, copyleft
+Tags: site, fade, ufpe, openredu
+Text Domain: openredu
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+html,*{margin:0;padding:0;transition:all .1s linear;-webkit-transition:all .1s linear;-moz-transition:all .1s linear;-o-transition:all .1s linear}
+html,body{height:100%;}
+body{font-family: 'Open Sans', sans-serif;background:#FFF;color:#6d6e6f;font-size:1em}
+article,aside,footer,header,nav,section{display:block}
+a{color:#1f1f1f}
+strong,b{font-weight:900}
+[hidden],template{display:none}
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+.clr{clear:both}
+h1,h2,h3,h4,h5,h6{margin:0;padding:0}
+a{background:transparent;text-decoration:none}
+a:active,a:hover{outline:0}
+abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:700}
+dfn{font-style:italic}
+hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+mark{background:#ff0;color:#000}
+small{font-size:80%}
+img{border:0}
+fieldset{border:none;padding:0}
+dd{margin:0}
+legend{border:0;padding:0}
+button,input,select,textarea,label{margin:0}
+button,input{line-height:normal}
+button,html input[type="button"],/* 1 */ input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
+input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+tr,td{margin:0;padding:0}
+ul{margin:0;padding:0}
+dl,dd,dt,li,p{margin:0;padding:0}
+.row-separator{display:block;clear:both}
+#gallery-1 img{border:0 !important}
+
+/* Auxiliares */
+header.head-page:after, section .envelope:after,div.central:after, header.head-page div.social-icons:after,section#use div.icones:after,section#use div.mostra-usuarios:after, section#colabore div.modalidades:after,section#ajuda ul.itens:after, section#content-single article.post .entry-content .insert-page > p:after, section#content-area.blog #posts-area:after{content:"";display: block;clear: both;}
+ul.post-meta{display: none}
+
+/* Header*/
+header.head-page{background-color: #fff;z-index: 999}
+header.head-page section.central .envelope{background-color:#fff}
+header.head-page section.central .envelope.head-social{background-color:#e6e6e6}
+header.head-page section.central .envelope.head-menu{max-width:1200px;min-width:320px}
+header.head-page .logo{width: 180px}
+header.head-page .logo a{display: block}
+header.head-page .logo a figure{}
+header.head-page .logo a figure img{width:100%;height: auto}
+header.head-page .logo a figure img.icon{display: none;width:50%;height: auto}
+header.head-page #ck-menu{position: absolute;clip:rect(0,0,0,0)}
+header.head-page label.lb-ckmenu{position:relative;width: 40px;float: left}
+header.head-page label.lb-ckmenu span.icon-line{background-color: #444a55;margin: 2px;padding: 2px;display: block}
+header.head-page nav.menu-top{font-size: 0.9em}
+header.head-page nav.menu-top .menu-principal-container{text-transform: uppercase}
+header.head-page nav.menu-top .menu-principal-container ul{}
+header.head-page nav.menu-top .menu-principal-container ul li{}
+header.head-page nav.menu-top .menu-principal-container ul li a{display:block;padding: 45px 20px 10px}
+header.head-page nav.menu-top .menu-principal-container ul li ul.sub-menu{background-color: #dbeff7;border-top:5px solid #dbeff7}
+header.head-page nav.menu-top .menu-principal-container ul li ul.sub-menu:before{content:"";display:block;width: 20px;height:10px;background-color: #dbeff7;top:-5px;left:10%;position: absolute;z-index:-1;transform:rotateZ(45deg);-webkit-transform:rotateZ(45deg);-moz-transform:rotateZ(45deg);-ms-transform:rotateZ(45deg)}
+header.head-page nav.menu-top .menu-principal-container ul li ul.sub-menu li a{padding: 15px 20px;color: rgba(0,0,0,0.4)}
+header.head-page nav.menu-top .menu-principal-container ul li ul.sub-menu li:hover a{color: rgba(0,0,0,0.9);background-color: #73c3e6}
+header.head-page nav.menu-top .menu-principal-container ul li:hover, header.head-page nav.menu-top .menu-principal-container ul li:hover > ul.sub-menu{}
+header.head-page div.social-icons{max-width: 1200px;min-width: 320px}
+header.head-page div.social-icons ul{float: right;margin: 0 40px;position: relative}
+header.head-page div.social-icons ul li{display: inline-block !important;margin: 0 !important}
+header.head-page div.social-icons ul li a.social-icon{display: block;/*padding: 10px; position: relative; */}
+header.head-page div.social-icons ul li:hover a.social-icon{background-color:#ccc}
+header.head-page div.social-icons ul li a.social-icon span.social-icons-list-label{display: none; background-color: #ccc;position: absolute;color:#e6e6e6;margin-left:-25%;padding: 10px;font-size:0.7em;line-height:1em}
+header.head-page div.social-icons ul li a.social-icon:hover span.social-icons-list-label{display: block;}
+
+/*  Área do banner slide*/
+aside.banner{position: relative;width: 100%;padding-top:120px}
+aside.banner div.ms-slide-info{position: absolute;top: 20%;left: 5% !important;width: auto !important;padding: 10px;max-width:50%}
+aside.banner div.ms-slide-info .ms-info{font-size: 1.5em;line-height: 1.5em}
+aside.banner div.ms-slide-info .ms-info img{margin: 10px 0}
+aside.banner div.ms-slide-info .ms-info a{display: inline-block;padding: 10px 25px;color: #fff;background-color:#444a55;clear: both;margin-top: 20px;font-size: 0.7em}
+
+/* Parallax auxiliar SOBRE*/
+aside.auxiliar div.parallax-window-container{}
+aside.auxiliar div.parallax-window-container div.adamrob_parallax_posttitle{font-size: 3.5em;text-align:left !important;padding: 50px 20px !important;}
+aside.auxiliar div.parallax-window-container div.adamrob_parallax_postcontent p{padding: 10px;background-color: rgba(0,0,0,0.6);margin: 20px 0;color: #fff}
+div.parallax-window-container .adamrob_parallax_posttitle{color: #fff;margin: 20% 0;text-align: center;font-weight: 700;text-shadow: 2px 2px 2px #333;z-index: 10;position: relative;}
+/* Parallax in content */
+article.post div.parallax-window-container{color: #fff;text-align: center;line-height: 2.5em;text-shadow: 0 0 20px #999;padding: 50px 0}
+article.post div.parallax-window-container div.adamrob_parallax_posttitle{font-size: 2.5em;padding: 20px 0}
+article.post div.parallax-window-container div.adamrob_parallax_postcontent p{font-size: 1.3em}
+
+section#more-about div.central, section#conheca div.central, section#use div.central,footer#contato div.central,section#ajuda div.central, section#colabore .central{max-width: 1200px;min-height:320px;margin: 0 auto;padding: 20px 0}
+section#more-about div.central h1.title-section,section#conheca div.central h2.title-section, section#use div.central h3.title-section, section#colabore h3.title-section, section#ajuda h3.title-section{font-size: 3.5em;padding: 30px 0;font-weight: 900;text-align: center;text-transform:uppercase;}
+
+/* Área do Sobre */
+section#more-about{background-image:url(img/bg-sobre.jpg); background-repeat: no-repeat;background-position: 100% 100%}
+section#more-about div.central div.intro-sobre{padding: 20px 0;line-height: 1.8em;}
+section#more-about div.central div.intro-sobre p.apresentacao, section#conheca div.central aside.widget{float: left;padding: 0 30px;width: 40%;line-height: 1.5em}
+section#use div.central h3.sub-title{border-right: 1px solid #fff;font-size: 2em;font-weight: 100}
+section#more-about div.central div.intro-sobre p.apresentacao{font-size: 1.5em}
+section#more-about div.central h1.title-section{color:#158ac4}
+section#more-about div.central div.intro-sobre h2{padding-bottom: 20px;margin-bottom: 30px}
+section#more-about div.central div.intro-sobre a.forum,section#content-area article.post div.entry-content p a.forum{color: #fff;background-color:#f35e00;display:block;border-radius:2px;padding: 10px 15px;text-transform: uppercase;width: 150px}
+section#more-about div.central div.intro-sobre a.forum{display:inline;padding: 5px}
+/* Área de conheça HOME */
+section#conheca{background-color: #444a55;color: #fff;z-index: 10;position: relative;}
+section#conheca:before, section#conheca:after{display:block;position: absolute;left:0;width: 100%;content:"";padding: 3% 0;background-repeat: no-repeat;z-index: 20;background-size:70%}
+section#conheca:before{top:0;background-image:url(img/bg-nuvem-acima.png);background-position: 0 100%}
+section#conheca:after{bottom:0;background-image:url(img/bg-nuvem-abaixo.png);background-position: 100% 0%}
+section#conheca div.central aside.widget:last-child{padding: 10px;background-color: #fff;width: 35%;padding: 20px}
+section#conheca div.central aside.widget:first-child{width: 50%;padding: 30px 0}
+section#conheca div.central aside.widget h3.side-title{color: #444a55;font-size: 2em;border-bottom: 2px solid #444a55;padding-bottom: 10px;text-align: center}
+section#conheca div.central aside.widget .wpcf7{padding: 10px 0}
+section#conheca div.central aside.widget .wpcf7 form span{}
+section#conheca div.central aside.widget .wpcf7 form input, section#conheca div.central aside.widget .wpcf7 form select, section#conheca div.central aside.widget .wpcf7 form textarea, article.post .wpcf7 form input, article.post .wpcf7 form select, article.post .wpcf7 form textarea{margin: 5px 0;padding: 5px;color: #999;background-color: #ebebeb;border: 0}
+section#conheca div.central aside.widget .wpcf7 form textarea, article.post .wpcf7 form textarea{height: 70px}
+section#conheca div.central aside.widget .wpcf7 form input:not([type="submit"]){margin: 5px 0;padding; 5px;width: 90%}
+section#conheca div.central aside.widget .wpcf7 form input[type="submit"]{display: block;margin: 0 auto;background-color: #444a55;color: #fff;font-size: 0.9em;pading: 10px}
+
+/* section USE */
+section#use div.central h3.title-section{color: #5fc080}
+section#use h4.sub-title,section#use h5.sub-title{text-align: center}
+section#use hr{border:1px solid #bbb;width: 50%;margin: 0 auto}
+section#use div.icones{padding: 40px}
+section#use div.icones figure.icone{width: 30%;float: left;margin: 1.5%;text-align:center}
+section#use div.icones figure.icone img{with:100%;height:auto;margin-bottom: 5px}
+section#use div.icones figure.icone h3{padding: 5px;color:#5fc080;text-transform: uppercase;}
+section#use div.icones figure.icone figcaption{display:block;font-size: 0.9em;line-height: 1.5em}
+section#use div.mostra-usuarios{padding: 20px 0;text-align: center}
+section#use div.mostra-usuarios h4{padding: 20px 0;text-align: center;}
+section#use div.mostra-usuarios div.instancias, section#use div.mostra-usuarios div.usuarios,section#use div.mostra-usuarios div.trabalhos{border-radius:2px;-webkit-border-radius:2px;-moz-border-radius:2px;-o-border-radius:2px;color: #fff;float:left}
+section#use div.mostra-usuarios div span{display:block;padding: 5px}
+section#use div.mostra-usuarios div span.num{font-size: 1.2em;font-weight: 900}
+section#use div.mostra-usuarios div span.caption{font-size: 0.8em;font-weight: 100}
+section#use div.mostra-usuarios div.instancias{background-color: #abe385}
+section#use div.mostra-usuarios div.usuarios{background-color: #5fc080}
+section#use div.mostra-usuarios div.trabalhos{background-color: #61a080}
+section#use div.mostra-usuarios div.trabalhos{background-color: #61a080}
+section#use div.mostra-usuarios span.clr{display: block;padding: 10px}
+section#use div.central .bts_cta{}
+section#use div.central a.a-demo, section#use div.central a.a-registre{padding: 5px;text-align:center;text-transform: uppercase;font-size:0.8em}
+section#use div.central .bts_cta a:hover{box-shadow: 0 0 5px #333}
+section#use div.central a.a-demo{background-color: #9c9c9d;color: #fff}
+section#use div.central a.a-registre{background-color: #e1f1e1}
+
+/* Section colabore */
+section#colabore{background-color: #f7f7f7;/* background-image:url(img/bg-colabore.jpg); */background-size:100%;background-position: 50% 0;background-repeat: no-repeat;}
+section#colabore h3.title-section{color:#f35e00}
+section#colabore h4.sub-title,section#colabore h5.sub-title{text-align: center;padding: 5px;}
+section#colabore h5.sub-title{padding-bottom: 20px}
+section#colabore hr{border: 1px solid #eee;width: 30%;margin: 0 auto}
+section#colabore div.modalidades,section#ajuda ul.itens{padding: 40px 0;text-align: center}
+section#colabore div.modalidades div.modalidade h5{padding: 5px;border-bottom: 1px solid #bbb;text-transform: uppercase;color:#ffa935;font-size: 1.5em;margin: 0 20px}
+section#colabore div.modalidades div.modalidade h6{font-weight: 500;padding: 10px;font-size: 1.2em;margin: 0 20px}
+section#colabore div.modalidades div.modalidade p{font-size: 0.9em;line-height: 1.3em;margin: 0 20px}
+section#colabore div.modalidades div.modalidade a{display: inline-block;padding: 5px 10px;margin: 10px auto;color: #b3b3b3;text-transform: uppercase;font-size: 0.7em; box-shadow: 0 0 5px #ddd}
+section#colabore div.modalidades div.modalidade a:hover{color: #fff;background-color:#ffc800}
+section#colabore div.prestadores{max-width: 80%;margin: 0 auto}
+section#colabore div.prestadores h3 a{display: inline-block;background-color: #eee;padding: 10px 20px;border-bottom:1px solid #bbb;color:#ffc800}
+
+/* section Ajuda */
+section#ajuda{background-color: #e1f1e1;background-image:url(img/bg-ajuda.jpg)}
+section#ajuda h3.title-section{color: #fff}
+section#ajuda hr{width: 30%; margin: 0 auto; border: 1px solid #fff}
+section#ajuda ul.itens{text-align:center}
+section#ajuda ul.itens:after{content:"";display:block;clear: both;}
+section#ajuda ul.itens li.item{display: block; float: left; width: 20%; margin: 0 2%;}
+section#ajuda ul.itens li.item figure{}
+section#ajuda ul.itens li.item figure img{}
+section#ajuda ul.itens li.item figure figcaption{text-transform: uppercase;padding: 10px}
+section#ajuda ul.itens p{font-size: 0.8em;padding: 10px}
+section#ajuda ul.itens li.item ul{padding: 0 40px}
+section#ajuda ul.itens li.item ul li{text-align: left}
+
+/* Barra auxiliar */
+section.auxiliar{position: relative}
+section.auxiliar div.search form input.search-field{visibility: hidden;}
+section.auxiliar div.search:hover form input.search-field{visibility: visible;}
+section.auxiliar div.search form input.search-field{padding: 7px;border: 0;outline:0;border-bottom:1px solid transparent;background: #fff;border-radius:2px 0 0 2px}
+section.auxiliar div.search form input.search-field:focus{border-bottom-color:#fff}
+section.auxiliar div.search form input.search-submit{width: 20px;height: auto;float: right;padding: 5px 10px;border-radius: 0 2px 2px 0;opacity: 0.3}
+section.auxiliar div.search:hover form input.search-submit{background-color: #158ac4;opacity: 1}
+
+/* Conteúdo Blog/Archive */
+section#content-area{}
+section#content-area article.first.post{margin-bottom: 30px}
+section#content-area header.blog-header{padding: 10px 0}
+section#content-area header.blog-header h1.blog-title{font-size: 2em;padding: 10px}
+section#content-area #posts-area{padding: 20px 0}
+section#content-area.blog #posts-area{padding: 20px 0;border-bottom: 1px solid #eee}
+section#content-area.colabore article.first.post section.entry div.entry-content{padding:20px}
+section#content-area #posts-area article.post{padding-bottom: 40px}
+section#content-area #posts-area article.post ul{padding-left: 30px}
+section#content-area #posts-area article.post header.entry-header{padding-bottom: 15px}
+section#content-area #posts-area article.post header.entry-header a{display: block}
+section#content-area #posts-area article.post header.entry-header h2 a. section#content-area #posts-area article.post .entry-content{padding: 10px 20px}
+section#content-area #posts-area article.post header.entry-header a img, section#content-area article.post header.entry-header img{width: 100%;height: auto}
+section#content-area #posts-area article.post header.entry-header{padding-bottom: 15px}
+section#content-area.colabore #posts-area article.post:nth-child(odd){background-color: #f5f5f5}
+section#content-area article.blog.post header.entry-header h2.sub-title, section#content-single.blog article.post header.entry-header h1.title{padding: 20px 0 5px}
+section#content-area article.blog.post .entry-content{}
+section#content-area article.blog.post .meta-area, section#content-single.blog article.post header.entry-header .meta-area{padding:5px 0;font-size: 0.8em;color: #ccc}
+section#content-area.blog article.blog.post .entry-content{border-bottom: 1px solid #eee;margin-bottom: 40px}
+section#content-area article.blog.post .entry-content a.more-link{display: inline-block;padding: 5px 10px;background-color: #eee;color: #666;margin: 5px 0;clear:both;font-size: 0.8em;border-radius: 2px;-webkit-border-radius: 2px;-moz-border-radius: 2px;-o-border-radius: 2px;-ms-border-radius: 2px;}
+section#content-area article.blog.post .entry-content a.more-link:hover{background-color: #ccc;color: #f5f5f5}
+
+/* conteúdo da área Colabore */
+section#content-area.colabore #posts-area article.post header.entry-header h2{background-color: rgba(0,0,0,0.8);position:relative}
+section#content-area.colabore #posts-area article.post header.entry-header h2 a{color: #fff}
+
+/* Conteúdo - Single */
+section#content-single{}
+section#content-single #main article.blog{}
+section#content-single #main article.extra{}
+section#content-single #main section.entry{max-width: 1200px;min-width:320px;margin: 0 auto}
+section#content-single header.single-header{padding: 20px 0}
+section#content-single.blog article.post header.entry-header h1.title{font-size: 2em}
+section#content-single article.post .entry-header{position:relative}
+section#content-single article.post .entry-header a{display:block}
+section#content-single article.post .entry-header a img, section#content-single article.post .entry-header img{width: 100%;height: auto}
+section#content-single article.post .entry-content, section#content-area article.post .entry-content{line-height: 1.5em}
+section#content-area article.post .entry-content{padding: 20px}
+section#content-single article.post .entry-content p{padding: 10px 0}
+section#content-single article.post .entry-content h2{padding: 20px 0 10px;}
+section#content-single article.post .entry-content h3, section#content-single article.post .entry-content h4{padding: 40px 0 10px}
+section#content-single article.post .entry-content .forum{text-align: center;}
+section#content-single article.post .entry-content .forum h3{}
+section#content-single article.post .entry-content .forum a{display:inline-block;padding: 10px; background-color: #f35e00;border-radius:2px;text-transform: uppercase;color: #fff}
+section#content-single article.blog.post .entry-content a{color: #252525}
+section#content-single article.blog.post .entry-content a:hover{text-decoration: underline;}
+section#content-single.blog article.post .entry-content ul li{list-style-image: url(img/bullet.svg)}
+
+/* Breadcrubms */
+section.auxiliar{background-color: #6d6e6f;padding: 20px 0}
+nav.breadcrumbs div.breadcrumbs{color: #fff}
+nav.breadcrumbs span:not(:first-child){display:inline-block;margin:0 5px}
+nav.breadcrumbs span:first-child{margin-right:5px}
+nav.breadcrumbs span a{color: #fff;font-size: 0.8em}
+
+
+
+/* single - sobre */
+section#content-single article.post .entry-content .insert-page{padding: 20px}
+section#content-single article.post .entry-content .insert-page.trabalhos{background-color:#f7f7f7;margin-top:20px}
+section#content-single article.post .entry-content .insert-page.apoio{background-color:#ddd}
+section#content-single article.post .entry-content .insert-page.apoio h1.insert-page-title{padding: 20px 0;text-align: center}
+section#content-single article.post .entry-content .insert-page.apoio p a{display: block;float: left;position: relative;text-align: center}
+section#content-single article.post .entry-content .insert-page.apoio p a img{width: 100%;height:auto}
+
+/* Content Search */
+section#search{max-width: 1200px;min-width:320px;margin: 0 auto;}
+
+/* Form inside single article */
+article.post .wpcf7{background-color: #f3f3f3}
+article.post .wpcf7 form{margin: 0 auto;max-width: 40%}
+
+/* Related posts */
+.yuzo_related_post{border-top: 1px solid #eee}
+
+/*  Aside right*/
+section.sidebars aside.sidebar{border:1px solid #eee;margin-bottom: 20px}
+section.sidebars aside.sidebar h2.widgettitle{border-bottom: 1px solid #eee;padding: 10px;font-size: 1.2em}
+section.sidebars aside.sidebar ul{padding: 10px;font-size: 0.9em}
+section.sidebars aside.sidebar ul li{display: block}
+section.sidebars aside.sidebar ul li a{padding: 5px;display:block}
+section.sidebars aside.sidebar.widget_recent_entries ul li{margin-bottom: 5px}
+section.sidebars aside.sidebar.widget_recent_entries ul li a{padding: 5px 0;display:block;font-weight: 300}
+section.sidebars aside.sidebar.widget_recent_entries ul li span.post-date{display: block;padding: 2px 0;font-size: 0.7em;color: #ddd;font-style: italic;}
+section.sidebars aside.sidebar.widget_tag_cloud .tagcloud{padding: 10px}
+
+footer#contato{background-color: #6d6e6f;padding-top: 30px}
+footer#contato div.central{color: #fff;font-size: 0.8em}
+
+footer#contato div.central div.sobre-foot figure.img-logo{padding: 5px;width: 150px}
+footer#contato div.central div.sobre-foot figure.img-logo img{width:100%;height: auto}
+footer#contato div.central address.more{font-style: normal}
+footer#contato div.central address.more h4.side-title{font-size: 1.5em;padding: 20px 0}
+footer#contato div.central address.more div.textwidget{font-size: 0.9em}
+ footer#contato div.central div.menu-principal-container ul li{display: inline-table;padding: 5px}
+ footer#contato div.central div.menu-principal-container ul li a{display:block;padding: 5px;text-transform: uppercase;font-weight: bold}
+ footer#contato div.central div.menu-principal-container ul li.menu-item-has-children ul li{display: block}
+ footer#contato div.central div.menu-principal-container ul li.menu-item-has-children ul li a{font-weight: 100}
+footer#contato section.copyright{background-color: #000;color: #fff;padding: 20px;font-size: 0.8em;text-align:center;}
