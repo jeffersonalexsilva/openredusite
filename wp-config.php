@@ -17,19 +17,20 @@
  *
  * @package WordPress
  */
-//define('WP_DEBUG', true);
+define('WP_DEBUG', true);
 // ** Configurações do MySQL - Você pode pegar estas informações
 // com o serviço de hospedagem ** //
 /** O nome do banco de dados do WordPress */
 define('DB_NAME', 'openredu_org');
 
 /** Usuário do banco de dados MySQL */
-define('DB_USER', 'openreduorg');
+define('DB_USER', 'root');
 
 /** Senha do banco de dados MySQL */
-define('DB_PASSWORD', 'orr3du2017');
+define('DB_PASSWORD', '123456');
 
 /** Nome do host do MySQL */
+//define('DB_HOST', '172.18.207.193');
 define('DB_HOST', 'localhost');
 
 /** Charset do banco de dados a ser usado na criação das tabelas. */
